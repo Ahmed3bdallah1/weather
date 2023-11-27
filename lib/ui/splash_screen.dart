@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:weather_app/models/constant.dart';
 import 'package:weather_app/ui/home_screen.dart';
 
@@ -79,10 +80,9 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Constants().primaryColor,
-      body: const Center(
-        child: CircularProgressIndicator(
-          color: Colors.white,
-        ),
+      body: Center(
+        child: Lottie.asset("assets/lottie/weather_lottie.json",
+            width: 100, height: 100),
       ),
     );
   }
