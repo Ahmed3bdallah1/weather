@@ -1,6 +1,6 @@
 class Initial{
 
-  String location='zagazig';
+  String location='london';
   String weatherIcon='rainy.png';
   int temperature=0;
   int windSpeed=0;

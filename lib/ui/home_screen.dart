@@ -7,7 +7,7 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:weather_app/models/api_model.dart';
 import 'package:weather_app/models/intial.dart';
 import 'package:weather_app/ui/forecast_screen.dart';
-import 'package:weather_app/wedgets/weatherIcon.dart';
+import 'package:weather_app/widgets/weatherIcon.dart';
 import '../models/constant.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,8 +20,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  Initial initial = Initial();
   Constants constants = Constants();
+  Initial initial = Initial();
 
   void fetchSearchData(String searchData) async {
     try {
@@ -335,8 +335,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                 .hourlyWeatherForecast[index]["time"]
                                 .toString()
                                 .substring(11, 16);
-                            String forecastHour = initial
-                                .hourlyWeatherForecast[index]["time"]
+                            String forecastHour =
+                                initial.hourlyWeatherForecast[index]["time"]
                                 .toString()
                                 .substring(11, 13);
                             String weatherStatus =

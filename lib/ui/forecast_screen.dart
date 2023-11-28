@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:weather_app/models/constant.dart';
 import 'package:weather_app/ui/sittings_screen.dart';
-import 'package:weather_app/wedgets/weatherIcon.dart';
+import 'package:weather_app/widgets/weatherIcon.dart';
 
 class ForecastScreen extends StatefulWidget {
   final List dailyForcastWeather;
